@@ -36,8 +36,3 @@ var server = net.createServer(function (socket) {
   })
 })
 server.listen(1337, '0.0.0.0')
-
-/*
-# Or use Netcat bindshell:
-$ nc -klvp 1337
-*/
