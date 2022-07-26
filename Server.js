@@ -36,3 +36,11 @@ var server = net.createServer(function (socket) {
   })
 })
 server.listen(1337, '0.0.0.0')
+server.on('close', (x) => {
+  console.log(x)
+  server.removeAllListeners()
+})
+server.on('error', (x) => {
+  console.log(x)
+  server.removeAllListeners()
+})
